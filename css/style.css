@@ -1,192 +1,201 @@
+/* fonts begin */
+
 @font-face {
-  font-family: "Dosis";
-  src: url('../fonts/Dosis-ExtraLight.ttf');
-}
-@font-face {
-  font-family: "Dosis Book";
-  src: url('../fonts/Dosis-Book.ttf');
+  font-family : "Dosis";
+  src         : url('../fonts/Dosis-ExtraLight.ttf');
 }
 
+@font-face {
+  font-family : "Dosis Book";
+  src         : url('../fonts/Dosis-Book.ttf');
+}
+
+/* fonts end */
+
 body {
-  background: url('../img/background.jpg') no-repeat 50% 0%;
-  background-size: 100%;
-  font-family: "Dosis";
+  background      : url('../img/background.jpg') no-repeat 50% 0%;
+  background-size : 100%;
+  font-family     : "Dosis";
 }
 
 .container {
-  display: block;
-  position:absolute;
-
-  width: 36.350em;
-  height: 27.375em;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-  margin: auto;
-  border-radius: 0.3em;
-  box-shadow: 0px 0px 21px #363636;
+  display       : block;
+  position      : absolute;
+  top           : 50%;
+  left          : 50%;
+  width         : 36.350em;
+  height        : 27.375em;
+  margin        : auto;
+  border-radius : 0.3em;
+  box-shadow    : 0px 0px 21px #363636;
+  transform     : translate(-50%,-50%);
 }
 
-/*left_side begin*/
+/* left_side begin */
+
 .container .left_side {
-  width: 50%;
-  height: 100%;
-
-  float: left;
-  background: url('../img/city.jpg') no-repeat left;
-  /*background-size: 100%;*/
-  border-radius: 0.3em 0 0 0.3em;
-  overflow: hidden;
+  width         : 50%;
+  height        : 100%;
+  float         : left;
+  overflow      : hidden;
+  border-radius : 0.3em 0 0 0.3em;
+  background    : url('../img/city.jpg') no-repeat left;
+  /* background-size: 100%; */
 }
 
-/*creen-sun begin*/
+/* creen-sun begin */
+
 .screen {
-  /*height: 15em;*/
-  height: 54.7%;
-  text-align: center;
+  /* height: 15em; */
+  height     : 54.7%;
+  text-align : center;
 }
 
 .screen:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  content        : '';
+  display        : inline-block;
+  height         : 100%;
+  vertical-align : middle;
 }
 
 .screen img {
-  display: inline-block;
-    vertical-align: middle;
+  display        : inline-block;
+  vertical-align : middle;
 }
-/*creen-sun end*/
 
-/*state begin*/
+/* creen-sun end */
+
+/* state begin */
+
 .state {
-  /*height: 2.583em;*/
-  height: 21.26%;
-  background: rgba(46, 28, 37, 0.89);
-  font-size: 2.250em;
-  color: #fff;
-  text-align: center;
+  /* height: 2.583em; */
+  height     : 21.26%;
+  color      : #fff;
+  background : rgba(46, 28, 37, 0.89);
+  text-align : center;
+  font-size  : 2.250em;
 }
 
 .state span {
-  line-height: 2.583em;
+  line-height : 2.583em;
 }
-/*state end*/
 
-/*date begin*/
+/* state end */
+
+/* date begin */
+
 .date {
-  /*height: 4.9em;*/
-  height: 24.2%;
-  background: rgba(119, 25, 33, 0.89);
-  font-size: 1.4em;
-  color: #fff;
-  text-align: center;
+  /* height: 4.9em; */
+  height     : 24.2%;
+  color      : #fff;
+  background : rgba(119, 25, 33, 0.89);
+  text-align : center;
+  font-size  : 1.4em;
 }
 
 .date span {
- line-height: 4.9em;
+  line-height : 4.9em;
 }
-/*date end*/
-/*left_side end*/
 
-/*right_side begin*/
+/* date end */
+
+/* left_side end */
+
+/* right_side begin */
+
 .container .right_side {
-
-  width: 36.4%;
-  height: 100%;
-
-  float: right;
-  margin: auto;
-  padding: 0 6.8%;
-
-  background-color: #fff;
-  border-radius: 0 0.3em 0.3em 0;
-
-  text-align: center;
-  overflow: hidden;
+  width            : 36.4%;
+  height           : 100%;
+  float            : right;
+  margin           : auto;
+  padding          : 0 6.8%;
+  overflow         : hidden;
+  border-radius    : 0 0.3em 0.3em 0;
+  background-color : #fff;
+  text-align       : center;
 }
 
 .show_temp {
-  padding-top: 6%;
-
-  color: #771921;
-  font-size: 6.313em;
-  font-weight: normal;
-  text-align: center;
+  padding-top : 6%;
+  color       : #771921;
+  text-align  : center;
+  font-size   : 6.313em;
+  font-weight : normal;
 }
 
-/*graph begin*/
+/* graph begin */
+
 .graph {
-  border-top: 1px solid #771921;
-  border-bottom: 1px solid #771921;
-  padding-top: 13%;
-  padding-bottom: 6%;
+  padding-top    : 13%;
+  padding-bottom : 6%;
+  border-top     : 1px solid #771921;
+  border-bottom  : 1px solid #771921;
 }
 
-.graph img{
-    width: 100%;
+.graph img {
+  width : 100%;
 }
-/*graph end*/
-/*weather begin*/
+
+/* graph end */
+
+/* weather begin */
+
 .weather {
-  padding: 4% 0;
-  font-family: "Dosis Book";
+  padding     : 4% 0;
+  font-family : "Dosis Book";
 }
 
-/*list begin*/
+/* list begin */
+
 .weather ul {
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  text-align: center;
+  width      : 100%;
+  padding    : 0;
+  text-align : center;
+  list-style : none;
 }
 
 .weather li {
-  display: inline-block;
-  width: 3.125em;
-  text-align: center;
-  vertical-align: top;
+  display        : inline-block;
+  width          : 3.125em;
+  text-align     : center;
+  vertical-align : top;
 }
 
 li.left {
-  float:left;
+  float : left;
 }
 
-li.center {
-}
+li.center {}
 
 li.right {
-  float: right;
+  float : right;
 }
-/*list end*/
 
-.icon {
-}
+/* list end */
+
+.icon {}
 
 .day {
-  color: #771921;
-  border-bottom: 1px solid #771921;
-  padding-top: 25%;
-  padding-bottom: 22%;
+  padding-top    : 25%;
+  padding-bottom : 22%;
+  color          : #771921;
+  border-bottom  : 1px solid #771921;
 }
 
-.temp {
-}
+.temp {}
 
 span.above20 {
-  color: #771921;
-  display: inline-block;
-  padding-top: 20%;
+  display     : inline-block;
+  padding-top : 20%;
+  color       : #771921;
 }
 
 span.under20 {
-  display: inline-block;
-  color: #000;
-  margin-top: 15%;
+  display    : inline-block;
+  margin-top : 15%;
+  color      : #000;
 }
 
-/*weather end*/
-/*right side end*/
+/* weather end */
+
+/* right side end */
