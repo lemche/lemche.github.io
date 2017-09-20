@@ -34,25 +34,28 @@ body {
 /* left_side begin */
 
 .container .left_side {
+  box-sizing    : border-box;
   width         : 50%;
   height        : 100%;
   float         : left;
   overflow      : hidden;
+  border-right  : 1px solid #771921;
   border-radius : 0.3em 0 0 0.3em;
   background    : url('../img/city.jpg') no-repeat left;
   /* background-size: 100%; */
 }
 
-/* creen-sun begin */
+/* screen-sun begin */
 
 .screen {
   /* height: 15em; */
   height     : 54.7%;
+  background : url('../img/sun.png') no-repeat center;
   text-align : center;
 }
 
 .screen:before {
-  content        : '';
+  content        : "";
   display        : inline-block;
   height         : 100%;
   vertical-align : middle;
@@ -154,24 +157,27 @@ body {
   list-style : none;
 }
 
-.weather li {
-  display        : inline-block;
-  width          : 3.125em;
-  text-align     : center;
-  vertical-align : top;
+.weather ul li {
+  display      : inline-block;
+  width        : 3.125em;
+  float        : left;
+  margin-right : 14.57%;
+  text-align   : center;
 }
 
-li.left {
-  float : left;
+.weather ul li:nth-last-child(1) {
+  margin-right : 0px;
 }
 
-li.center {}
-
-li.right {
-  float : right;
+.clearfix:after {
+  content : "";
+  display : table;
+  clear   : both;
 }
 
 /* list end */
+
+/* list-content-begin */
 
 .icon {}
 
@@ -195,6 +201,8 @@ span.under20 {
   margin-top : 15%;
   color      : #000;
 }
+
+/* list-content-end */
 
 /* weather end */
 
