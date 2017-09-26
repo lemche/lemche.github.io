@@ -1,5 +1,4 @@
 /* fonts begin */
-
 @font-face {
   font-family : "Dosis";
   src         : url('../fonts/Dosis-ExtraLight.ttf');
@@ -9,7 +8,6 @@
   font-family : "Dosis Book";
   src         : url('../fonts/Dosis-Book.ttf');
 }
-
 /* fonts end */
 
 body {
@@ -190,13 +188,13 @@ body {
 
 .temp {}
 
-span.above20 {
+span.day {
   display     : inline-block;
   padding-top : 20%;
   color       : #771921;
 }
 
-span.under20 {
+span.night {
   display    : inline-block;
   margin-top : 15%;
   color      : #000;
