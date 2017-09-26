@@ -127,14 +127,14 @@ body {
 /* graph begin */
 
 .graph {
-  padding-top    : 13%;
-  padding-bottom : 6%;
   border-top     : 1px solid #771921;
   border-bottom  : 1px solid #771921;
+  background: url('../img/graph.png') no-repeat 50%;
+  height: 22%;
 }
 
 .graph img {
-  width : 100%;
+  /*width : 100%;*/
 }
 
 /* graph end */
