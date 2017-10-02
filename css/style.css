@@ -10,195 +10,393 @@
 }
 /* fonts end */
 
-body {
-  background      : url('../img/background.jpg') no-repeat 50% 0%;
-  background-size : 100%;
-  font-family     : "Dosis";
-  font-size: 16px;
+@media (max-width: 600px) {
+  body {
+    width           : 100%;
+    height          : 100%;
+    margin          : 0;
+    overflow        : hidden;
+    background: url('../img/background.jpg') ;
+    background-size: 100%;
+    font-family     : "Dosis";
+    font-size       : 16px;
+  }
+
+  .container {
+    display       : block;
+    margin        : auto;
+  }
+
+  /* left_side begin */
+
+  .container .left_side {
+    float         : left;
+    width         : 100%;
+    margin-top: 15%;
+    background: url('../img/background.jpg') no-repeat;
+  }
+
+  .container .left_side:after {
+    content : "";
+    display : table;
+    clear   : both;
+  }
+
+  /* screen-sun begin */
+
+  .screen {
+  }
+
+  .screen img {
+  }
+
+  /* creen-sun end */
+
+  /* state begin */
+
+  .state {
+    background : rgba(46, 28, 37, 0.89);
+    color      : #fff;
+    font-size   : 6vw;
+    line-height : 3rem;
+    text-align  : center;
+  }
+
+  .state img {
+    height : 5vw;
+  }
+  /* state end */
+
+  /* date begin */
+
+  .date {
+    color      : #fff;
+    background : rgba(119, 25, 33, 0.89);
+    font-size   : 6vw;
+    line-height : 3rem;
+    text-align  : center;
+  }
+
+  /* date end */
+
+  /* left_side end */
+
+  /* right_side begin */
+
+  .container .right_side {
+    width            : 100%;
+    float            : left;
+    background-color : #fff;
+    text-align       : center;
+  }
+
+  .container .right_side:before {
+    content : "";
+    display : table;
+    clear   : both;
+  }
+
+  .show_temp {
+    padding-top : 6%;
+    padding     : 3% 0;
+    color       : #771921;
+    font-size   : 2em;
+    font-weight : normal;
+    text-align  : center;
+  }
+
+  /* graph begin */
+
+  .graph {
+    margin     : auto;
+    text-align : center;
 }
 
-.container {
-  display       : block;
-  position      : absolute;
-  top           : 50%;
-  left          : 50%;
-  width         : 36.350em;
-  height        : 27.375em;
-  margin        : auto;
-  border-radius : 0.3em;
-  box-shadow    : 0px 0px 21px #363636;
-  transform     : translate(-50%,-50%);
+  .graph img{
+    height        : 100%;
+    padding       : 6% 0;
+    border-top    : 1px solid #771921;
+    border-bottom : 1px solid #771921;
+
+  }
+
+  /* graph end */
+
+  /* weather begin */
+
+  .weather {
+    padding     : 4% 0;
+    font-family : "Dosis Book";
+    text-align  : center;
+    margin: auto;
+  }
+
+  /* list begin */
+
+  .weather ul {
+    width           : 75%;
+    padding         : 0;
+    list-style      : none;
+    text-align      : center;
+    margin: auto;
+  }
+
+  .weather ul li {
+    display      : inline-block;
+    width        : 18vw;
+    float        : left;
+    margin-right : 10vw;
+    text-align   : center;
+  }
+
+  .weather ul li:nth-last-child(1) {
+    margin-right : 0px;
+  }
+
+  .clearfix:after {
+    content : "";
+    display : table;
+    clear   : both;
+  }
+
+  /* list end */
+
+  /* list-content-begin */
+
+
+  .weekday {
+    padding       : 5%;
+    border-bottom : 1px solid #771921;
+    color         : #771921;
+    font-size     : 6vw;
+    text-align    : center;
+  }
+
+  .temp {}
+
+  span.day {
+    display    : block;
+    margin-top : 15%;
+    color      : #771921;
+    font-size  : 4vw;
+    }
+
+  span.night {
+    display    : block;
+    margin-top : 10%;
+    color      : #000;
+    font-size  : 4vw;
+    padding-bottom: 25%;
+  }
+
+  /* list-content-end */
+
+  /* weather end */
+
+  /* right side end */
 }
 
-/* left_side begin */
+@media (min-width: 600px) {
 
-.container .left_side {
-  box-sizing    : border-box;
-  width         : 50%;
-  height        : 100%;
-  float         : left;
-  overflow      : hidden;
-  border-right  : 1px solid #771921;
-  border-radius : 0.3em 0 0 0.3em;
-  background    : url('../img/city.jpg') no-repeat left;
-  /* background-size: 100%; */
+  body {
+    background      : url('../img/background.jpg') no-repeat 50% 0%;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family     : "Dosis";
+    font-size: 16px;
+  }
+
+  .container {
+    display       : block;
+    position      : absolute;
+    top           : 50%;
+    left          : 50%;
+    width         : 36.350em;
+    height        : 27.375em;
+    margin        : auto;
+    border-radius : 0.3em;
+    box-shadow    : 0px 0px 21px #363636;
+    transform     : translate(-50%,-50%);
+  }
+
+  /* left_side begin */
+
+  .container .left_side {
+    box-sizing    : border-box;
+    width         : 50%;
+    height        : 100%;
+    float         : left;
+    overflow      : hidden;
+    border-right  : 1px solid #771921;
+    border-radius : 0.3em 0 0 0.3em;
+    background    : url('../img/city.jpg') no-repeat left;
+    /* background-size: 100%; */
+  }
+
+  /* screen-sun begin */
+
+  .screen {
+    /* height: 15em; */
+    height     : 54.7%;
+    background : url('../img/sun.png') no-repeat center;
+    text-align : center;
+  }
+
+  .screen:before {
+    content        : "";
+    display        : inline-block;
+    height         : 100%;
+    vertical-align : middle;
+  }
+
+  .screen img {
+    display        : inline-block;
+    vertical-align : middle;
+  }
+
+  /* creen-sun end */
+
+  /* state begin */
+
+  .state {
+    /* height: 2.583em; */
+    height     : 21.26%;
+    color      : #fff;
+    background : rgba(46, 28, 37, 0.89);
+    text-align : center;
+    font-size  : 2.250em;
+  }
+
+  .state span {
+    line-height : 2.583em;
+  }
+
+  .state img {
+    display: none;
+  }
+  /* state end */
+
+  /* date begin */
+
+  .date {
+    /* height: 4.9em; */
+    height     : 24.2%;
+    color      : #fff;
+    background : rgba(119, 25, 33, 0.89);
+    text-align : center;
+    font-size  : 1.4em;
+  }
+
+  .date span {
+    line-height : 4.9em;
+  }
+
+  /* date end */
+
+  /* left_side end */
+
+  /* right_side begin */
+
+  .container .right_side {
+    width            : 36.4%;
+    height           : 100%;
+    float            : right;
+    margin           : auto;
+    padding          : 0 6.8%;
+    overflow         : hidden;
+    border-radius    : 0 0.3em 0.3em 0;
+    background-color : #fff;
+    text-align       : center;
+  }
+
+  .show_temp {
+    padding-top : 6%;
+    color       : #771921;
+    text-align  : center;
+    font-size   : 6.313em;
+    font-weight : normal;
+  }
+
+  /* graph begin */
+
+  .graph {
+    border-top     : 1px solid #771921;
+    border-bottom  : 1px solid #771921;
+    background: url('../img/graph.png') no-repeat 50%;
+    height: 22%;
+  }
+
+  .graph img{
+    display: none;
+  }
+
+  /* graph end */
+
+  /* weather begin */
+
+  .weather {
+    padding     : 4% 0;
+    font-family : "Dosis Book";
+  }
+
+  /* list begin */
+
+  .weather ul {
+    width      : 100%;
+    padding    : 0;
+    text-align : center;
+    list-style : none;
+  }
+
+  .weather ul li {
+    display      : inline-block;
+    width        : 3.125em;
+    float        : left;
+    margin-right : 14.57%;
+    text-align   : center;
+  }
+
+  .weather ul li:nth-last-child(1) {
+    margin-right : 0px;
+  }
+
+  .clearfix:after {
+    content : "";
+    display : table;
+    clear   : both;
+  }
+
+  /* list end */
+
+  /* list-content-begin */
+
+  .icon {}
+
+  .weekday {
+    padding-top    : 25%;
+    padding-bottom : 22%;
+    color          : #771921;
+    border-bottom  : 1px solid #771921;
+  }
+
+  .temp {}
+
+  span.day {
+    display     : inline-block;
+    padding-top : 20%;
+    color       : #771921;
+  }
+
+  span.night {
+    display    : inline-block;
+    margin-top : 15%;
+    color      : #000;
+  }
+
+  /* list-content-end */
+
+  /* weather end */
+
+  /* right side end */
+
 }
-
-/* screen-sun begin */
-
-.screen {
-  /* height: 15em; */
-  height     : 54.7%;
-  background : url('../img/sun.png') no-repeat center;
-  text-align : center;
-}
-
-.screen:before {
-  content        : "";
-  display        : inline-block;
-  height         : 100%;
-  vertical-align : middle;
-}
-
-.screen img {
-  display        : inline-block;
-  vertical-align : middle;
-}
-
-/* creen-sun end */
-
-/* state begin */
-
-.state {
-  /* height: 2.583em; */
-  height     : 21.26%;
-  color      : #fff;
-  background : rgba(46, 28, 37, 0.89);
-  text-align : center;
-  font-size  : 2.250em;
-}
-
-.state span {
-  line-height : 2.583em;
-}
-
-/* state end */
-
-/* date begin */
-
-.date {
-  /* height: 4.9em; */
-  height     : 24.2%;
-  color      : #fff;
-  background : rgba(119, 25, 33, 0.89);
-  text-align : center;
-  font-size  : 1.4em;
-}
-
-.date span {
-  line-height : 4.9em;
-}
-
-/* date end */
-
-/* left_side end */
-
-/* right_side begin */
-
-.container .right_side {
-  width            : 36.4%;
-  height           : 100%;
-  float            : right;
-  margin           : auto;
-  padding          : 0 6.8%;
-  overflow         : hidden;
-  border-radius    : 0 0.3em 0.3em 0;
-  background-color : #fff;
-  text-align       : center;
-}
-
-.show_temp {
-  padding-top : 6%;
-  color       : #771921;
-  text-align  : center;
-  font-size   : 6.313em;
-  font-weight : normal;
-}
-
-/* graph begin */
-
-.graph {
-  border-top     : 1px solid #771921;
-  border-bottom  : 1px solid #771921;
-  background: url('../img/graph.png') no-repeat 50%;
-  height: 22%;
-}
-
-/* graph end */
-
-/* weather begin */
-
-.weather {
-  padding     : 4% 0;
-  font-family : "Dosis Book";
-}
-
-/* list begin */
-
-.weather ul {
-  width      : 100%;
-  padding    : 0;
-  text-align : center;
-  list-style : none;
-}
-
-.weather ul li {
-  display      : inline-block;
-  width        : 3.125em;
-  float        : left;
-  margin-right : 14.57%;
-  text-align   : center;
-}
-
-.weather ul li:nth-last-child(1) {
-  margin-right : 0px;
-}
-
-.clearfix:after {
-  content : "";
-  display : table;
-  clear   : both;
-}
-
-/* list end */
-
-/* list-content-begin */
-
-.icon {}
-
-.weekday {
-  padding-top    : 25%;
-  padding-bottom : 22%;
-  color          : #771921;
-  border-bottom  : 1px solid #771921;
-}
-
-.temp {}
-
-span.day {
-  display     : inline-block;
-  padding-top : 20%;
-  color       : #771921;
-}
-
-span.night {
-  display    : inline-block;
-  margin-top : 15%;
-  color      : #000;
-}
-
-/* list-content-end */
-
-/* weather end */
-
-/* right side end */
