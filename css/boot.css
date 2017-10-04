@@ -1,0 +1,299 @@
+/* fonts begin */
+
+@font-face {
+  font-family : "Dosis";
+  src         : url('../fonts/Dosis-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family : "Dosis Book";
+  src         : url('../fonts/Dosis-Book.ttf');
+}
+
+/* fonts end */
+
+@media (max-width: 770px) {
+  html {
+    height : 100%;
+  }
+
+  body {
+    align-items     : center;
+    background      : #91ba7f;
+    background-size : 100%;
+    display         : flex;
+    font-family     : "Dosis";
+    font-size       : 16px;
+    height          : 100%;
+  }
+
+  .container {
+    width : 100%;
+  }
+
+  .row {
+    flex-wrap : wrap;
+    /* height : 100%; */
+  }
+
+  .left {
+    padding : 0;
+    width   : 100%;
+  }
+
+  .screen {
+    display : none;
+  }
+
+  .screen img {
+    height : 5vw;
+  }
+
+  .state {
+    background  : rgba(46, 28, 37, 0.79);
+    color       : #fff;
+    font-size   : 6vw;
+    line-height : 3rem;
+    text-align  : center;
+  }
+
+  .date {
+    background  : rgba(119, 25, 33, 0.89);
+    color       : #fff;
+    font-size   : 6vw;
+    line-height : 3rem;
+    text-align  : center;
+  }
+
+  .right {
+    background-color : white;
+    width            : 100%;
+  }
+
+  .clearfix {
+    list-style : none;
+  }
+
+  .show_temp {
+    color       : #771921;
+    font-size   : 2em;
+    font-weight : normal;
+    padding     : 3% 0;
+    text-align  : center;
+  }
+
+  .graph {
+    margin     : auto;
+    text-align : center;
+  }
+
+  .graph img {
+    border-bottom : 1px solid #771921;
+    border-top    : 1px solid #771921;
+    height        : 100%;
+    padding       : 6% 0;
+  }
+
+  .weather {
+    font-family : "Dosis Book";
+    padding     : 4% 0;
+  }
+  /* list begin */
+
+  .weather ul {
+    list-style : none;
+    margin     : auto;
+    padding    : 4%;
+    text-align : center;
+    width      : 75%;
+  }
+
+  .weather ul li {
+    display      : inline-block;
+    float        : left;
+    margin-right : 20%;
+    text-align   : center;
+    width        : 20%;
+  }
+
+  .weather ul li:nth-last-child(1) {
+    margin-right : 0px;
+  }
+
+  .clearfix:after {
+    clear   : both;
+    content : "";
+    display : table;
+  }
+  /* list end */
+  /* list-content-begin */
+
+  .weekday {
+    border-bottom : 1px solid #771921;
+    color         : #771921;
+    font-size     : 6vw;
+    padding       : 5%;
+    text-align    : center;
+  }
+
+  .temp {}
+
+  span.day {
+    color      : #771921;
+    display    : block;
+    font-size  : 4vw;
+    margin-top : 15%;
+  }
+
+  span.night {
+    color          : #000;
+    display        : block;
+    font-size      : 4vw;
+    margin-top     : 10%;
+    padding-bottom : 25%;
+  }
+}
+
+@media(min-width: 770px) {
+  html {
+    height : 100%;
+  }
+
+  body {
+    align-items     : center;
+    background      : url('../img/background.jpg') no-repeat 50% 0%;
+    background-size : 100%;
+    display         : flex;
+    font-family     : "Dosis";
+    font-size       : 16px;
+    height          : 100%;
+  }
+
+  .container {
+    border-radius : 0.3em;
+    box-shadow    : 0px 0px 21px #363636;
+    height        : 27.375em;
+    width         : 36.350em;
+  }
+
+  .row {
+    flex-wrap : nowrap;
+    /* height : 100%; */
+  }
+
+  .left {
+    background    : url('../img/city.jpg') no-repeat left top;
+    border-radius : 0.3em 0 0 0.3em;
+    border-right  : 1px solid #771921;
+    padding       : 0;
+  }
+
+  .screen {}
+
+  .screen img {
+    margin  : auto;
+    padding : 16% 0;
+  }
+
+  .state {
+    background  : rgba(46, 28, 37, 0.79);
+    color       : #fff;
+    font-size   : 2.250em;
+    line-height : 2.583em;
+    text-align  : center;
+  }
+
+  .date {
+    background    : rgba(119, 25, 33, 0.89);
+    border-radius : 0 0 0 0.3em;
+    color         : #fff;
+    font-size     : 1.4em;
+    line-height   : 5em;
+    text-align    : center;
+  }
+
+  .right {
+    background-color : white;
+    border-radius    : 0 0.3em 0.3em 0;
+    margin           : auto;
+  }
+
+  .clearfix {
+    list-style : none;
+  }
+
+  .show_temp {
+    color       : #771921;
+    font-size   : 6.313em;
+    font-weight : normal;
+    text-align  : center;
+  }
+
+  .graph {
+    margin     : auto;
+    text-align : center;
+  }
+
+  .graph img {
+    border-bottom : 1px solid #771921;
+    border-top    : 1px solid #771921;
+    height        : 100%;
+    padding       : 6% 0;
+  }
+
+  .weather {
+    font-family : "Dosis Book";
+    padding     : 4% 0;
+  }
+  /* list begin */
+
+  .weather ul {
+    list-style : none;
+    padding    : 4% 0% 0% 9%;
+    text-align : center;
+    width      : 100%;
+  }
+
+  .weather ul li {
+    display      : inline-block;
+    float        : left;
+    margin-right : 14.57%;
+    text-align   : center;
+    width        : 3.125em;
+  }
+
+  .weather ul li:nth-last-child(1) {
+    margin-right : 0px;
+  }
+
+  .clearfix:after {
+    clear   : both;
+    content : "";
+    display : table;
+  }
+  /* list end */
+  /* list-content-begin */
+
+  .icon {}
+
+  .weekday {
+    border-bottom  : 1px solid #771921;
+    color          : #771921;
+    padding-bottom : 22%;
+    padding-top    : 25%;
+  }
+
+  .temp {}
+
+  span.day {
+    color       : #771921;
+    display     : inline-block;
+    padding-top : 20%;
+  }
+
+  span.night {
+    color      : #000;
+    display    : inline-block;
+    margin-top : 15%;
+  }
+}

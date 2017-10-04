@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Weather Widget</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/boot.css">
+
+
+  </head>
+  <body>
+    <article class="container text-center">
+      <div class="row">
+        <section class="col-md-6 left">
+        <div class="screen">
+          <img src="img/sun.png" />
+        </div>
+        <section class="state text-center">
+          <span>Sunny</span>
+        </section>
+        <section class="date text-center">
+          <span>Tokyo - Wednesday, July 31</span>
+        </section>
+      </section>
+        <section class="col-md-6 right">
+          <section class="show_temp">
+          <span>28 °C</span>
+        </section>
+
+        <div class="graph">
+          <img src="img/graph.png"/>
+        </div>
+
+        <section class="weather">
+          <ul class="clearfix">
+            <li class="column-md-2">
+                <div class="icon">
+                  <img src="img/clear.png" alt="clear">
+                </div>
+                <div class="weekday">
+                  Thu
+                </div>
+                <div class="temp">
+                  <span class="day">
+                    28°C
+                  </span>
+                  <span class="night">
+                    18°C
+                  </span>
+                </div>
+            </li>
+            <li class="column-md-2">
+              <div class="icon">
+                <img src="img/cloudy.png" alt="cloudy">
+              </div>
+              <div class="weekday">
+                    Fri
+              </div>
+              <div class="temp">
+                <span class="day">
+                    22°C
+                </span>
+                <span class="night">
+                    20°C
+                </span>
+              </div>
+            </li>
+            <li class="column-md-2">
+              <div class="icon">
+                <img src="img/cloudy.png" alt="cloudy">
+              </div>
+              <div class="weekday">
+                  Sat
+              </div>
+              <div class="temp">
+                <span class="day">
+                    30°C
+                </span>
+                <span class="night">
+                    27°C
+                </span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </section>
+      </div>
+    </article>
+  </body>
+</html>
