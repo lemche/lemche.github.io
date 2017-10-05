@@ -1,44 +1,169 @@
-.column2 { width: 16.66%; }
-.left_side, .right_side { width: 50%; }
-
-div[class*="column"] {
-float: left;
-padding: 0 15px;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+@font-face {
+  font-family : "Dosis";
+  src         : url('../fonts/Dosis-ExtraLight.ttf');
 }
 
-.container {
-margin-left: -15px;
-margin-right: -15px;
+@font-face {
+  font-family : "Dosis Book";
+  src         : url('../fonts/Dosis-Book.ttf');
 }
 
-.container:after ,.clearfix:after {
-content:"";
-display: block;
-clear: both;
+html {
+  box-sizing : border-box;
+  display: flex;
+  height: 100%;
 }
 
-.pull-right {float:right}
-.pull-left{float:left}
-.text-right{text-align:right;}
-.text-center{text-align:center;}
-.inline-block {display: inline-block;}
-.block {display: block;}
-ul.list-inline{padding:0; margin:0}
-ul.list-inline>li{display: inline-block;}
-.inline {display: inline}
-.container{
-width: 532px;
-margin: 0 auto;
-padding: 0px 10px;
+*,
+*::after,
+*::before {
+  box-sizing : inherit;
 }
 
-.weather ul {
-  width      : 100%;
-  padding    : 0;
-  text-align : center;
-  list-style : none;
-  display: inline-block;
+
+
+/*grid begin*/
+
+.grid {
+  display             : grid;
+  grid-template-areas : "sun show-temp state" "city city city" "graph graph graph" "weather weather weather";
+  /*grid-template-areas : "a b d" "f f f" "c c c" "e e e";*/
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  text-align: center;
+  grid-gap: 0px;
+}
+
+
+.grid__item {
+  padding    : 1em;
+}
+
+.sun{
+  grid-area: sun;
+}
+.show-temp{
+  grid-area: show-temp;
+}
+
+.state{
+  grid-area: state;
+}
+
+.city{
+  grid-area: city;
+}
+
+.graph{
+  grid-area: graph;
+}
+
+.weather{
+  grid-area: weather;
+}
+
+
+
+/*grid end*/
+
+body {
+  min-width : 320px;
+  margin: 0;
+  display: flex;
+  align-self: center;
+  background: url(../img/background.jpg) no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.sun, .show-temp, .state {
+  background  : rgba(46, 28, 37, 0.79);
+}
+
+.city{
+    background  : rgba(119, 25, 33, 0.79);
+}
+
+.sun__screen {
+  width: 30%;
+  background: none;
+}
+
+.show-temp__temperature, .state__sunny , .city__date, .weekday, .day, .night {
+  font-size: 6vw;
+  color: #fff;
+  font-family: "Dosis";
+  background: none;
+}
+
+.graph {
+  background: #fff;
+  padding: 3% 0;
+}
+
+  .weather {
+    margin      : auto;
+    padding     : 4% 0;
+    font-family : "Dosis Book";
+    text-align  : center;
+    width: 100%;
+    background: #fff;
+  }
+  /* list begin */
+
+  .weather ul {
+    display         : inline-flex;
+    justify-content : space-around;
+    width           : 75%;
+    padding         : 0;
+    list-style      : none;
+    text-align      : center;
+  }
+
+  .weather ul li {
+    text-align   : center;
+  }
+
+
+  .weekday {
+    padding       : 5%;
+    border-bottom : 1px solid #771921;
+    color         : #771921;
+    font-size     : 6vw;
+    text-align    : center;
+  }
+
+.day {
+  display    : block;
+  margin-top : 4%;
+  color      : #771921;
+  font-size  : 5vw;
+}
+.night{
+  display        : block;
+  margin-top     : 3%;
+  color          : #000;
+  font-size      : 5vw;
+}
+
+
+@media (min-width:600px) {
+  .grid {
+    display             : grid;
+    grid-template-areas : "sun show-temp" "sun graph" "state weather" "city weather";
+    grid-template-columns: 1fr 1fr;
+    font-size:  16px;
+  }
+
+  .grid__item {
+    padding    : 1em;
+    border     : 1px solid #fff;
+    background : #009688;
+  }
+
+
+
+
 }
