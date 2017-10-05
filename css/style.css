@@ -193,7 +193,7 @@
     left          : 50%;
     width         : 36.350em;
     height        : 27.375em;
-    margin        : auto;
+    margin        : 0;
     transform     : translate(-50%,-50%);
     border-radius : 0.3em;
     box-shadow    : 0px 0px 21px #363636;
